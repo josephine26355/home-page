@@ -1,0 +1,416 @@
+<!DOCTYPE html><html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>預言知己 - 啟程您的心靈之旅</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mystical-glow {
+            box-shadow: 0 0 40px rgba(75, 48, 97, 0.1);
+        }
+        .ethereal-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .star-field {
+            background-image: radial-gradient(circle at 2px 2px, rgba(212, 175, 55, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "on-primary-container": "#ba9ad3",
+                "surface-container-low": "#f5f3ef",
+                "on-secondary-fixed": "#241a00",
+                "primary-fixed-dim": "#dcbaf4",
+                "tertiary-container": "#38395a",
+                "outline-variant": "#cdc3cf",
+                "secondary": "#735c00",
+                "surface-tint": "#6f5386",
+                "surface-container": "#efeeea",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed": "#e1e0ff",
+                "on-tertiary-fixed-variant": "#434465",
+                "surface-bright": "#fbf9f5",
+                "tertiary-fixed-dim": "#c3c3eb",
+                "primary": "#341a4a",
+                "on-secondary-container": "#745c00",
+                "on-background": "#1b1c1a",
+                "surface-container-high": "#eae8e4",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed": "#171837",
+                "inverse-on-surface": "#f2f0ed",
+                "secondary-fixed": "#ffe088",
+                "on-error": "#ffffff",
+                "tertiary": "#222343",
+                "primary-container": "#4b3061",
+                "on-surface": "#1b1c1a",
+                "on-primary-fixed-variant": "#573b6d",
+                "error": "#ba1a1a",
+                "on-error-container": "#93000a",
+                "on-surface-variant": "#4b454e",
+                "outline": "#7c757e",
+                "surface-variant": "#e4e2de",
+                "on-primary": "#ffffff",
+                "secondary-fixed-dim": "#e9c349",
+                "on-secondary-fixed-variant": "#574500",
+                "error-container": "#ffdad6",
+                "inverse-surface": "#30312e",
+                "on-primary-fixed": "#290e3e",
+                "surface": "#fbf9f5",
+                "surface-container-lowest": "#ffffff",
+                "background": "#fbf9f5",
+                "surface-container-highest": "#e4e2de",
+                "secondary-container": "#fed65b",
+                "inverse-primary": "#dcbaf4",
+                "primary-fixed": "#f2daff",
+                "surface-dim": "#dbdad6",
+                "on-tertiary-container": "#a3a3ca"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "margin-desktop": "64px",
+                "gutter": "24px",
+                "container-max": "1200px",
+                "unit": "8px",
+                "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                "headline-sm": ["Playfair Display"],
+                "label-md": ["Manrope"],
+                "display-lg": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"],
+                "caption": ["Manrope"],
+                "body-lg": ["Manrope"],
+                "body-md": ["Manrope"],
+                "headline-md": ["Playfair Display"]
+              },
+              "fontSize": {
+                "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_0_30px_rgba(75,48,97,0.08)]">
+<div class="flex justify-between items-center px-6 md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">預言知己</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#">Tarot</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#">Zi Wei</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#">Hypnosis</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary p-2">account_circle</button>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-all active:scale-95">Login</button>
+</div>
+</div>
+</nav>
+<main class="pt-20 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center px-6 star-field">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-background -z-10"></div>
+<div class="max-w-4xl text-center space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container/20 rounded-full text-secondary animate-pulse transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="font-label-md text-label-md">探索命運的深處</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                    遇見預言知己，<br>啟程心靈之旅
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    在星光與燭火交織的靜謐空間，我們陪伴您穿透迷霧，尋找內在的力量。這是一場關於自我發現的療癒旅程。
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-700 opacity-100 translate-y-0">
+<button class="bg-primary text-white px-10 py-4 rounded-full font-label-md text-label-md flex items-center gap-2 group transition-all hover:mystical-glow">
+                        預約心靈諮詢
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-outline px-10 py-4 rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">
+                        了解服務項目
+                    </button>
+</div>
+</div>
+<!-- Floating Decorative Elements -->
+<div class="absolute top-1/4 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-1/4 right-10 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
+</section>
+<!-- Divine Services (Bento Grid) -->
+<section class="py-24 px-6 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<div class="flex items-center justify-center gap-2 mb-4 transition-all duration-700 opacity-100 translate-y-0">
+<div class="h-[1px] w-12 bg-secondary/30"></div>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="h-[1px] w-12 bg-secondary/30"></div>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">神聖導引服務</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Tarot Card -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-3xl bg-surface-container-lowest p-1 border border-outline-variant/30 hover:border-secondary/50 transition-all duration-500 shadow-sm hover:shadow-xl duration-700 opacity-100 translate-y-0">
+<div class="relative h-[400px] rounded-[1.4rem] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A mystical Tarot reading scene on a rustic wooden table illuminated by soft, warm golden candlelight. Several ornate cards are spread in a Celtic cross pattern, featuring intricate celestial and mystical illustrations. The atmosphere is quiet, serene, and magical, with wisps of incense smoke swirling in the dim light, using a palette of deep violets and soft ambers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkb3Z6H4m7xfJDXbSHHLESCwQcO1PmMB8LBRMSvdHPzhNxiVHIeiiwK94MfleZU_nwDu-ILikuYDUCdVw8SOWU5eTbOH6lknodAoG6x3aPrx8oEX5apskDjU08bTMB08iIaimTZGS2yCz8OOaM4CHH6RQaMcKqT6a0wTzQL7oEym0q83GeuViiWZ4-Vg4fARmewE75YIZV3ldHSamJShmrDfWibadfkcSU7G9x2fZA27OsZDfpw_BvZls7lP0bp04f_83f90fj5fJc">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-2">塔羅占卜 (Tarot)</h3>
+<p class="font-body-md text-white/80 max-w-md">解碼命運的象徵，在翻開每一張牌的瞬間，洞察當下的能量流動與未來的指引。</p>
+<button class="mt-6 px-6 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30 hover:bg-white/40 transition-all font-label-md text-label-md">
+                                開始探索
+                            </button>
+</div>
+</div>
+</div>
+<!-- Zi Wei Card -->
+<div class="md:col-span-5 group relative overflow-hidden rounded-3xl bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-secondary/50 transition-all duration-500 shadow-sm hover:shadow-xl flex flex-col justify-between duration-700 opacity-100 translate-y-0">
+<div class="space-y-4">
+<div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">紫微命理 (Zi Wei)</h3>
+<p class="font-body-md text-on-surface-variant">
+                            透過星盤的排列，解析生命的藍圖。理解天賦使命，把握人生各階段的起伏與轉機。
+                        </p>
+</div>
+<div class="mt-8 relative h-48 rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A sophisticated and detailed astrolabe or celestial star chart with ancient Chinese astronomical markings. The design is elegant, featuring thin gold metallic lines on a deep midnight blue textured paper background. The scene is lit by a focused, warm spotlight creating a sense of ancient wisdom and cosmic mystery within a modern, clean aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgi7-ojSObIkL9guaEqXt39qE33-qHZJHTcFK6k8zLwOrWyx4TLCuL-5PFVQa0q6c_C_DwCzrm4zRb28qtmMS9ZREds52Zlem36udOiMHMC-hF-OnGaEGvAoRvCbN2EWvrvLCrCOquIRLyLjR2_Cgccd4-CSqjz6H0cBL6ns5EqvWHVIrL_Dezbh9NM0qudo7xCNwuFRuGkIOhdzA-FdWmToYrfSbx-xT5XRXQawX05_dB_2xk8a0BXSHgaCPa94yX4l75Kr1yvC8t">
+</div>
+</div>
+<!-- Hypnosis Card -->
+<div class="md:col-span-5 group relative overflow-hidden rounded-3xl bg-surface-container-lowest p-8 border border-outline-variant/30 hover:border-secondary/50 transition-all duration-500 shadow-sm hover:shadow-xl duration-700 opacity-100 translate-y-0">
+<div class="space-y-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">waves</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">紫微命理 (Zi Wei)</h3>
+<p class="font-body-md text-on-surface-variant">
+                            潛入意識的海洋，釋放累積的焦慮。在深度放鬆中找回靈魂的平靜與內在的慈悲。
+                        </p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-[80px] text-outline-variant/20 group-hover:text-secondary/20 transition-colors duration-500">nights_stay</span>
+</div>
+</div>
+<!-- About Small Card -->
+<div class="md:col-span-7 bg-primary-container text-white rounded-3xl p-10 flex flex-col justify-center relative overflow-hidden transition-all duration-700 opacity-100 translate-y-0">
+<div class="relative z-10 space-y-6">
+<h3 class="font-headline-sm text-headline-sm">關於預言知己</h3>
+<p class="font-body-md text-on-primary-container text-lg">
+                            「我們不只是占卜師，更是您心靈長途上的旅伴。」結合古老智慧與當代心理洞察，為您提供最溫暖的指引。
+                        </p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md border-b border-secondary text-secondary pb-1" href="#">
+                            我們的故事
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<!-- Decorative Circle -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 border border-white/10 rounded-full"></div>
+<div class="absolute -bottom-20 -right-20 w-60 h-60 border border-white/5 rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low/50">
+<div class="max-w-container-max mx-auto px-6 md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 transition-all duration-700 opacity-100 translate-y-0">
+<div class="space-y-4">
+<h2 class="font-headline-md text-headline-md text-primary">旅人的聲音</h2>
+<p class="font-body-md text-on-surface-variant">聽聽那些在迷惘中找回方向的靈魂怎麼說。</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-white transition-all active:scale-95">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-white transition-all active:scale-95">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-700 opacity-100 translate-y-0">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_4px_20px_rgba(75,48,97,0.03)] border border-white relative">
+<span class="material-symbols-outlined text-secondary/30 absolute top-8 right-8 text-4xl">format_quote</span>
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface mb-6">
+                            「在最迷惘的時刻來到這裡，老師的塔羅解讀不僅精準，更有一種溫柔的治癒力量。讓我看清了關係中的盲點，重新找回勇氣。」
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a serene young woman with a gentle smile, looking directly at the camera. The background is a soft, out-of-focus garden at sunset, bathed in warm golden light. She has a peaceful expression that conveys gratitude and emotional clarity, matching the mystical intimacy of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_HR6jM1mgm-z1n_2W3nMTrlZ67Q9F1kwlS3r86EKSyPDfRgu3SZkv279nFpxrmjmBntEmb-UlPNDu05vabo1fItg3IMbjoXCNMoPJXZdbjsdLDlWt6OEvfXAaYk_gogfJAkfFsNOLD02YwZBkG83F-iC5oBr0YVembnfmadQfqdkVqCFyxQ65oxs6SpxLOSlOsT03U8VCV1nyzsocgamRcf2Sv_ItLIKSbiKkL0WUwwoc5rucKRhc_VX82Vp74CR4SJNpp_l7AcEf">
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">林小姐</p>
+<p class="font-caption text-caption text-on-surface-variant">自由創作者</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_4px_20px_rgba(75,48,97,0.03)] border border-white relative">
+<span class="material-symbols-outlined text-secondary/30 absolute top-8 right-8 text-4xl">format_quote</span>
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface mb-6">「紫微命盤的解析非常專業且有條理。這不只是算命，更像是一場深度的自我認知工作坊，讓我明白如何發揮自己的天賦。」</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a sophisticated man in his early 40s wearing a high-quality linen shirt. He has a thoughtful, enlightened gaze. The lighting is soft side-lighting, reminiscent of a high-end editorial shoot in a minimalist architectural space, evoking a sense of grounded wisdom and professional clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1Ga36Gsy3FTmGoyY57LVPT0WxoKvVKGtOsy7S3uWMs7n8n1Fj75IT0zc3QTdyw4N016AezWG3KG1VqH0gcqawlbH-yxRi_rbDMyXI73uCUVR48kfuMJ2D1LGCEM0i38c9WZrGyc_Jgmup4-QjBUZdxUiYKcON8hy20Pa4JfDkpdcknRzYVLDrSAzJuvsa3ACIkIilZdwbv9H1JnCEdby1gGz2pwi5K-DcQqEqlmmrzB9HBLAOrrzVguXOT3fguN7NH0vzg4DT8Dip">
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">張先生</p>
+<p class="font-caption text-caption text-on-surface-variant">企業管理顧問</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-[0_4px_20px_rgba(75,48,97,0.03)] border border-white relative">
+<span class="material-symbols-outlined text-secondary/30 absolute top-8 right-8 text-4xl">format_quote</span>
+<div class="flex gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface mb-6">
+                            「催眠體驗非常奇妙，像是做了一場長長的清醒夢。原本壓抑的情緒得到了釋放，醒來後感覺整個人輕盈了許多，真心推薦。」
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A soft-focus portrait of a young woman with closed eyes and a tranquil, peaceful facial expression. Her hair is loosely tied, and there's a subtle golden glow highlighting her silhouette. The image feels ethereal and serene, capturing the 'enlightened calm' of a spiritual healing experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaXsOJL1_U6r2iE3NEHfIgy95FNtaRI4U7godOnlkkJpewqYWqMrvkE2mgyjFSMUGEMypntmMW2wjIivTPkPKPbRl_9kZ4npHdYStGqeDxl-RadWOIyL-c3o_i2WhsD_LA68p-pi0c4cL4NggEY0aGRKtacqAnqccb37SsMfF_Xxyx8pNd2vx7YJKN4VV9mxjfoqQ-iGPmfOJS6bAogpdeFt9V-W9VaHyEHTl7h_4A9Pc_GJ5Rjg_QyBiZGOjgECMBexyj8exVkK6a">
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">陳小姐</p>
+<p class="font-caption text-caption text-on-surface-variant">軟體工程師</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-6 md:px-margin-desktop">
+<div class="max-w-4xl mx-auto bg-surface-container-high rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 group-hover:opacity-100 transition-opacity duration-1000 transition-all duration-700 opacity-100 translate-y-0"></div>
+<div class="relative z-10 space-y-8 transition-all duration-700 opacity-100 translate-y-0">
+<h2 class="font-headline-md text-headline-md text-primary">準備好遇見您的「預言知己」了嗎？</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+                        不論是尋求方向還是釋放壓力，我們在這裡為您點亮一盞燈。現在預約，開啟您的第一場靈魂對話。
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-white px-12 py-4 rounded-full font-label-md text-label-md shadow-xl hover:translate-y-[-2px] active:translate-y-0 transition-all">
+                            立即預約諮詢
+                        </button>
+<button class="bg-secondary-container text-on-secondary-container px-12 py-4 rounded-full font-label-md text-label-md hover:bg-secondary-fixed transition-colors">
+                            查看諮詢費用
+                        </button>
+</div>
+</div>
+<!-- Subtle pattern -->
+<div class="absolute top-0 right-0 p-8 text-secondary/5 transition-all duration-700 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim border-t border-outline-variant/20 py-12">
+<div class="flex flex-col items-center gap-8 px-6 md:px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="font-headline-sm text-headline-sm text-primary">預言知己</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-12">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Contact Us</a>
+<a class="text-primary font-bold hover:text-secondary transition-colors font-label-md text-label-md" href="#">Book a Session</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">
+                © 2024 預言知己. All rights reserved. Spiritual Guidance for the Modern Soul.
+            </p>
+</div>
+</footer>
+<!-- Back to Top Micro-interaction -->
+<button class="fixed bottom-8 right-8 w-12 h-12 bg-white/80 ethereal-blur text-primary rounded-full shadow-lg border border-outline-variant/20 flex items-center justify-center translate-y-24 opacity-0 transition-all duration-500 hover:scale-110 active:scale-95" id="backToTop">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+<script>
+        // Micro-interaction for back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('translate-y-24', 'opacity-0');
+                backToTop.classList.add('translate-y-0', 'opacity-100');
+            } else {
+                backToTop.classList.add('translate-y-24', 'opacity-0');
+                backToTop.classList.remove('translate-y-0', 'opacity-100');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Simple scroll reveal for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+
+
+</body></html>
